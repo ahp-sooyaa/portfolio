@@ -19,6 +19,7 @@ header {
 }
 
 .header-wrapper {
+    text-align: center;
     padding: 64px 0 96px 0;
     margin: 0 auto;
     width: 90%;
@@ -30,6 +31,7 @@ header {
 
 @media (min-width: 768px) {
     .header-wrapper {
+        text-align: left;
         padding: 0;
         display: flex;
         height: 600px;
@@ -43,6 +45,7 @@ header {
         margin: 0 auto;
         /* width: 768px; */
         width: 1024px;
+        justify-content: end;
     }
 }
 
@@ -52,6 +55,12 @@ header {
     height: 300px;
     width: 250px;
 }
+
+/* @media (min-width:1024px) {
+    .header-left {
+        margin-left: 64px;
+    }
+} */
 
 .header-left div:first-child {
     transform: rotate(352deg);
@@ -73,12 +82,13 @@ header {
 
 .header-right {
     flex: 1;
-    /* margin-left: ; */
+    margin-left: 0px;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
     .header-right {
         margin-left: 96px;
+        max-width: 600px;
     }
 }
 
@@ -101,14 +111,14 @@ header {
 @media (min-width: 768px) {
     .header-right h1 {
         font-size: 3rem;
-        letter-spacing: .1em;
+        letter-spacing: .05em;
     }
 }
 
 @media (min-width: 1024px) {
     .header-right h1 {
         font-size: 3.5rem;
-        letter-spacing: .2em;
+        letter-spacing: .1em;
     }
 }
 
@@ -196,9 +206,15 @@ header {
 
 .projects,
 .contact {
-    padding-bottom: 3rem;
+    padding-bottom: 32px;
     margin: 0 auto;
     width: 90%;
+}
+
+@media (min-width: 640px) {
+    .contact {
+        padding-bottom: 48px;
+    }
 }
 
 .projects-header {
@@ -212,7 +228,14 @@ header {
 .projects-header,
 .contact-header {
     text-align: center;
-    margin-bottom: 2.5rem;
+    margin-bottom: 24px;
+}
+
+@media (min-width: 640px) {
+    .projects-header, 
+    .contact-header {
+        margin-bottom: 32px;
+    }
 }
 
 .projects-header p {
