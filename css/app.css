@@ -15,7 +15,6 @@ a {
 
 header {
     position: relative;
-    /* height: 600px; */
 }
 
 .header-wrapper {
@@ -41,9 +40,7 @@ header {
 
 @media (min-width: 1024px) {
     .header-wrapper {
-        /* margin: 0 128px 0 auto; */
         margin: 0 auto;
-        /* width: 768px; */
         width: 1024px;
         justify-content: end;
     }
@@ -56,11 +53,11 @@ header {
     width: 250px;
 }
 
-/* @media (min-width:1024px) {
+@media (min-width:1024px) {
     .header-left {
-        margin-left: 64px;
+        padding-bottom: 0px;
     }
-} */
+}
 
 .header-left div:first-child {
     transform: rotate(352deg);
@@ -98,27 +95,18 @@ header {
     margin-top: 0;
     margin-bottom: 1rem;
     font-weight: 700;
-    /* letter-spacing: -.025em; */
 }
-
-/* @media (min-width: 1024px) {
-    .header-right h1 {
-        font-size: 3.5rem;
-        letter-spacing: .2em;
-    }
-} */
 
 @media (min-width: 768px) {
     .header-right h1 {
         font-size: 3rem;
-        letter-spacing: .05em;
+        letter-spacing: .025em;
     }
 }
 
 @media (min-width: 1024px) {
     .header-right h1 {
         font-size: 3.5rem;
-        letter-spacing: .1em;
     }
 }
 
@@ -136,10 +124,11 @@ header {
 }
 
 .header-right p {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     color: #485D71;
     line-height: 1.5em;
     margin: 0;
+    letter-spacing: .01em;
 }
 
 @media (min-width: 640px) {
@@ -232,7 +221,7 @@ header {
 }
 
 @media (min-width: 640px) {
-    .projects-header, 
+    .projects-header,
     .contact-header {
         margin-bottom: 32px;
     }
@@ -281,6 +270,10 @@ header {
     .projects-card {
         width: 48%;
     }
+
+    .projects-card:not(:last-child) {
+        margin-bottom: 0px;
+    }
 }
 
 .projects-card p {
@@ -303,7 +296,7 @@ header {
 }
 
 .projects-info {
-    padding: 0 20px;
+    padding: 0 24px 24px 24px;
 }
 
 .contact-info {
@@ -364,7 +357,6 @@ footer div {
     text-align: center;
     line-height: 1.5rem;
     color: #808F9E;
-    /* height: 50px; */
     padding: 32px 24px;
     margin: 0 auto;
     display: flex;
@@ -384,35 +376,14 @@ footer div {
     transform: rotate(180deg);
 }
 
+@media (min-width: 1024px) {
+    .header-wave {
+        height: 128px;
+    }
+}
+
 .header-wave svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 105px;
 }
-
-.custom-shape-divider-bottom-1633167507 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1633167507 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 105px;
-}
-
-@media (min-width: 768px) {
-    /* .header-wrapper {
-        display: flex;
-        flex-direction: row;
-    } */
-}
-
-@media (min-width: 1024px) {}
