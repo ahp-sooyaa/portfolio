@@ -1,20 +1,26 @@
 :root {
-    --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --primary-color: #004E92;
+    --neutral-color: #E5E7EB;
 }
 
 body {
     margin: 0;
-    background-color: #fff;
-    border-top: 8px solid #376A8F;
+    background-color: var(--neutral-color);
     font-family: 'Cabin', sans-serif;
+    color: #000;
 }
 
 a {
     text-decoration: none;
+    color: #000;
 }
 
 header {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
     position: relative;
+    background: linear-gradient(180deg, #000428, #004E92);
 }
 
 .header-wrapper {
@@ -46,126 +52,69 @@ header {
     }
 }
 
-.header-left {
-    padding-bottom: 48px;
-    position: relative;
-    height: 300px;
-    width: 250px;
-}
-
-@media (min-width:1024px) {
-    .header-left {
-        padding-bottom: 0px;
-    }
-}
-
-.header-left div:first-child {
-    transform: rotate(352deg);
-    width: 250px;
-    position: absolute;
-    height: 300px;
-    background: #376A8F;
-    border-radius: 20px;
-    z-index: -1;
-}
-
-.profile-img {
-    height: 100%;
-    width: 100%;
-    border-radius: 20px;
-    object-fit: cover;
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.header-right {
+.header {
     flex: 1;
     margin-left: 0px;
+    text-align: center;
 }
 
-@media (min-width: 768px) {
-    .header-right {
-        margin-left: 96px;
-        max-width: 600px;
-    }
-}
-
-.header-right h1 {
+.header h1 {
     font-size: 2rem;
     line-height: 1;
     margin-top: 0;
     margin-bottom: 1rem;
     font-weight: 700;
+    line-height: 1.5em;
+    background: radial-gradient(circle at center, #52ACFF 0, #073dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 @media (min-width: 768px) {
-    .header-right h1 {
+    .header h1 {
         font-size: 3rem;
         letter-spacing: .025em;
     }
 }
 
 @media (min-width: 1024px) {
-    .header-right h1 {
+    .header h1 {
         font-size: 3.5rem;
     }
 }
 
-.header-right span {
+.header span {
     display: inline-block;
-    color: #2C445A;
+    color: #fff;
+    font-weight: 700;
     font-size: 1.5rem;
     margin-bottom: .5rem;
 }
 
 @media (min-width: 640px) {
-    .header-right span {
+    .header span {
         font-size: 2rem;
     }
 }
 
-.header-right p {
+.header p {
     font-size: 1.125rem;
-    color: #485D71;
+    color: #fff;
     line-height: 1.5em;
     margin: 0;
     letter-spacing: .01em;
 }
 
 @media (min-width: 640px) {
-    .header-right p {
+    .header p {
         font-size: 1.5rem;
     }
-}
-
-.btn {
-    border: 1px solid white;
-    border-radius: 30px;
-    padding: 5px 10px;
-    letter-spacing: 0.1em;
-    cursor: pointer;
-    box-shadow: 0 0 20px rgb(0 0 0 / 8%);
-    font-family: 'Inter', sans-serif;
-}
-
-.btn-accent {
-    background-color: #3292e4;
-    padding: 15px 20px;
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.btn-accent:hover {
-    background-color: #358cd8;
-}
-
-.btn-accent a {
-    color: white;
 }
 
 .projects-link {
     display: flex;
     align-items: center;
-    color: #B8C2CB;
+    color: #000;
     text-decoration: none;
 }
 
@@ -185,8 +134,13 @@ header {
 .projects-wrapper {
     width: 100%;
     min-height: 644px;
-    background-color: #2C445A;
-    margin-bottom: 32px;
+    margin-bottom: 0px;
+}
+
+@media (min-width: 640px) {
+    .projects-wrapper {
+        margin-bottom: 32px;
+    }
 }
 
 .projects {
@@ -195,9 +149,12 @@ header {
 
 .projects,
 .contact {
-    padding-bottom: 32px;
     margin: 0 auto;
     width: 90%;
+}
+
+.contact {
+    padding-bottom: 32px;
 }
 
 @media (min-width: 640px) {
@@ -206,12 +163,14 @@ header {
     }
 }
 
+/* .contact-card */
+
 .projects-header {
-    color: #fff;
+    color: #000;
 }
 
 .contact-header {
-    color: #2C445A;
+    color: #000;
 }
 
 .projects-header,
@@ -221,6 +180,7 @@ header {
 }
 
 @media (min-width: 640px) {
+
     .projects-header,
     .contact-header {
         margin-bottom: 32px;
@@ -228,11 +188,11 @@ header {
 }
 
 .projects-header p {
-    color: #B8C2CB;
+    color: #6B7280;
 }
 
 .contact-header p {
-    color: #485D71;
+    color: #6B7280;
 }
 
 .projects-header p,
@@ -249,8 +209,6 @@ header {
 
 @media (min-width: 640px) {
     .projects-list {
-        display: flex;
-        flex-direction: row;
         justify-content: space-between;
     }
 }
@@ -258,8 +216,6 @@ header {
 .projects-card {
     border-radius: 1rem;
     width: 100%;
-    color: #fff;
-    box-shadow: 0 0 20px rgb(0 0 0 / 8%);
 }
 
 .projects-card:not(:last-child) {
@@ -268,22 +224,43 @@ header {
 
 @media (min-width: 640px) {
     .projects-card {
-        width: 48%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
     }
 
     .projects-card:not(:last-child) {
-        margin-bottom: 0px;
+        margin-bottom: 48px;
     }
 }
 
 .projects-card p {
-    color: #E2E8ED;
+    color: #000;
     line-height: 1.5rem;
 }
 
 .projects-card div:first-child {
     width: 100%;
     height: 300px;
+}
+
+@media (min-width:640px) {
+    .projects-card div:first-child {
+        width: 50%;
+    }
+}
+
+.projects-tags {
+    margin-bottom: 24px;
+}
+
+.projects-tag {
+    background-color: #000428;
+    padding: 4px 12px;
+    border-radius: 8px;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
 }
 
 .projects-img {
@@ -296,7 +273,17 @@ header {
 }
 
 .projects-info {
-    padding: 0 24px 24px 24px;
+    padding: 0 0 24px 0;
+    margin: 0 auto;
+    max-width: 30em;
+}
+
+@media (min-width: 640px) {
+    .projects-info {
+        width: 50%;
+        padding: 0;
+        margin: 0 48px 0 0;
+    }
 }
 
 .contact-info {
@@ -308,12 +295,57 @@ header {
 
 @media (min-width: 640px) {
     .contact-info {
-        width: 20%;
+        width: 60%;
     }
 }
 
-.contact-info svg {
-    width: 32px;
+@media (min-width: 768px) {
+    .contact-info {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact-info {
+        width: 40%;
+    }
+}
+
+.contact-card {
+    background: #fff;
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 2px 5px rgb(0 0 0 / 50%);
+}
+
+.contact-card svg {
+    width: 24px;
+}
+
+.contact-card span {
+    display: none;
+}
+
+@media (min-width: 640px) {
+    .contact-card {
+        width: max-content;
+        height: 32px;
+        display: flex;
+        padding: 8px 16px;
+        align-items: center;
+    }
+
+    .contact-card svg {
+        margin-right: 12px;
+    }
+
+    .contact-card span {
+        display: block;
+    }
 }
 
 .projects-header h2,
@@ -330,23 +362,16 @@ header {
     letter-spacing: .1em;
 }
 
-.projects-header h2::after,
-.contact-header h2::after {
+.projects-header h2::before,
+.contact-header h2::before {
     content: "";
     position: absolute;
-    height: 5px;
-    background-color: dodgerblue;
-    width: 30%;
-    left: 50%;
-    bottom: 0;
-    border-radius: 5px;
-    transform: translateX(-50%);
-    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
-}
-
-.projects-header h2:hover::after,
-.contact-header h2:hover::after {
+    bottom: 10px;
     width: 100%;
+    height: 14px;
+    transform: skew(-12deg) translateX(-6%);
+    background: rgba(0, 78, 146, .5);
+    z-index: -1;
 }
 
 footer {
@@ -362,7 +387,7 @@ footer div {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top: 2px solid #808F9E;
+    /* border-top: 2px solid #808F9E; */
 }
 
 /* wave opacity svg */
@@ -386,4 +411,32 @@ footer div {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
+}
+
+.custom-shape-divider-bottom-1634006919 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1634006919 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 90px;
+}
+
+.custom-shape-divider-bottom-1634006919 .shape-fill {
+    fill: #E5E7EB;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1634006919 svg {
+        width: calc(100% + 1.3px);
+        height: 45px;
+    }
 }
