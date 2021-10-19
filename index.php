@@ -5,10 +5,127 @@
     <meta charset="UTF-8">
     <meta name="description" content="A personal portfolio site of aunghtetpaing">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-control" content="public, max-age=31536000">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <style>
+        :root {
+            --primary-color: #004E92;
+            --neutral-color: #E5E7EB
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--neutral-color);
+            font-family: 'Cabin', sans-serif;
+            color: #000
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            min-height: 500px;
+            position: relative;
+            background: linear-gradient(180deg, #000428, #004E92)
+        }
+
+        .header-wrapper {
+            text-align: center;
+            padding: 64px 0 96px 0;
+            margin: 0 auto;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center
+        }
+
+        .header {
+            flex: 1;
+            margin-left: 0;
+            text-align: center
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            line-height: 1;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            line-height: 1.5em;
+            background: radial-gradient(circle at center, #21C8F6 0, #637BFF);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent
+        }
+
+        .header span {
+            display: inline-block;
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: .5rem
+        }
+
+        .header p {
+            font-size: 1.125rem;
+            color: #fff;
+            line-height: 1.5em;
+            margin: 0;
+            letter-spacing: .01em
+        }
+
+        .custom-shape-divider-bottom-1634006919 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0
+        }
+
+        .custom-shape-divider-bottom-1634006919 svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 90px
+        }
+
+        .custom-shape-divider-bottom-1634006919 .shape-fill {
+            fill: #E5E7EB
+        }
+
+        @media (max-width:767px) {
+            .custom-shape-divider-bottom-1634006919 svg {
+                width: calc(100% + 1.3px);
+                height: 45px
+            }
+        }
+
+        html {
+            line-height: 1.15;
+            -webkit-text-size-adjust: 100%
+        }
+
+        body {
+            margin: 0
+        }
+
+        main {
+            display: block
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: .67em 0
+        }
+
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            font: inherit
+        }
+    </style>
+
     <title>Aung htet paing</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,7 +168,7 @@
                 <div class="projects-list">
                     <div class="projects-card">
                         <div>
-                            <img src="images/hielo_thumbnail.png" alt="hielo-thumbnail" class="projects-img">
+                            <img src="images/hielo_thumbnail.webp" alt="hielo-thumbnail" class="projects-img">
                         </div>
                         <div class="projects-info">
                             <h3>Hielo</h3>
@@ -83,7 +200,7 @@
                     </div>
                     <div class="projects-card">
                         <div>
-                            <img src="images/forum_thumbnail.png" alt="forum-thumbnail" class="projects-img">
+                            <img src="images/forum_thumbnail.webp" alt="forum-thumbnail" class="projects-img">
                         </div>
                         <div class="projects-info">
                             <h3>Forum</h3>
@@ -158,7 +275,8 @@
             </div>
         </footer>
     </main>
-
+    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
 </body>
 
 </html>
