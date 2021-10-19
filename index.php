@@ -154,7 +154,7 @@
 
         <footer>
             <div>
-                &copy; copyright 2021, aunghtetpaing.me . All right reserved.
+                \aunghtetpaing.me/
             </div>
         </footer>
     </main>
