@@ -114,7 +114,7 @@ header {
 .projects-link {
     display: flex;
     align-items: center;
-    color: #6B7280;
+    color: #374251;
     text-decoration: none;
 }
 
@@ -188,11 +188,11 @@ header {
 }
 
 .projects-header p {
-    color: #6B7280;
+    color: #374251;
 }
 
 .contact-header p {
-    color: #6B7280;
+    color: #374251;
 }
 
 .projects-header p,
@@ -383,7 +383,7 @@ footer {
 footer div {
     text-align: center;
     line-height: 1.5rem;
-    color: #808F9E;
+    color: #374251;
     padding: 32px 24px;
     margin: 0 auto;
     display: flex;

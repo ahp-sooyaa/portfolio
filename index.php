@@ -5,10 +5,21 @@
     <meta charset="UTF-8">
     <meta name="description" content="A personal portfolio site of aunghtetpaing">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cache-control" content="public, max-age=31536000">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <style>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" onload="this.onload=null;this.removeAttribute('media');"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap">
+
+    <style type="text/css">
         :root {
             --primary-color: #004E92;
             --neutral-color: #E5E7EB
@@ -127,11 +138,6 @@
     </style>
 
     <title>Aung htet paing</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
@@ -241,7 +247,7 @@
                 <p>Don't hestitate to contact me</p>
             </div>
             <div class="contact-info">
-                <a href="#" class="contact-card">
+                <a href="https://www.twitter.com/aunghte23771311" class="contact-card">
                     <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <title>Twitter</title>
                         <path
@@ -271,7 +277,7 @@
 
         <footer>
             <div>
-                \aunghtetpaing.me/
+                Copyright &copy; 2021 aunghtetpaing.herokuapp.com .
             </div>
         </footer>
     </main>
