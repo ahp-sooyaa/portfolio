@@ -187,10 +187,10 @@
                                     Laravel
                                 </span>
                                 <span class="projects-tag">
-                                    CSS
+                                    Vue
                                 </span>
                                 <span class="projects-tag">
-                                    Vue
+                                    Bootstrap
                                 </span>
                             </div>
                             <a href="https://github.com/ahp-sooyaa/hielo" class="projects-link">
@@ -227,6 +227,38 @@
                                 </span>
                             </div>
                             <a href="https://github.com/ahp-sooyaa/forum" class="projects-link">
+                                View source on github
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="projects-card">
+                        <div>
+                            <img src="images/koob_thumbnail.webp" alt="forum-thumbnail" class="projects-img">
+                        </div>
+                        <div class="projects-info">
+                            <h3>Koob</h3>
+                            <p>
+                                A ecommerce book store app with laravel8, tailwind, vue, inertia & stripe. User can add
+                                books to cart, checkout.
+                            </p>
+                            <div class="projects-tags">
+                                <span class="projects-tag">
+                                    Laravel
+                                </span>
+                                <span class="projects-tag">
+                                    Vue
+                                </span>
+                                <span class="projects-tag">
+                                    Tailwind
+                                </span>
+                            </div>
+                            <a href="https://github.com/ahp-sooyaa/koob" class="projects-link">
                                 View source on github
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
                                     fill="currentColor">
