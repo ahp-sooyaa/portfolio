@@ -136,6 +136,7 @@
             font: inherit
         }
     </style>
+    <link rel="stylesheet" href="css/app.min.css">
 
     <title>Aung htet paing</title>
 </head>
@@ -269,6 +270,44 @@
                             </a>
                         </div>
                     </div>
+                    <!-- <a href="https://github.com/ahp-sooyaa" class="projects-link">
+                        See all projects at GitHub
+                    </a> -->
+                </div>
+
+                <hr>
+
+                <div class="videos-header">
+                    <h3>Some of my coding videos</h3>
+                    <p>Just recording while coding not teaching or something else</p>
+                </div>
+                <div class="videos-info">
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/FTDJR7UQo7o" allow="fullscreen">
+                        </iframe>
+                        <!-- <video controls>
+                            <source src="videos/Fixing background image.mov" type="video/mp4">
+                        </video> -->
+                        <p>Fixing background image of "space tourism website challenge of frontend mentor"</p>
+                    </div>
+
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/AhqCqls1L5Q" allow="fullscreen">
+                        </iframe>
+                        <!-- <video controls>
+                            <source src="videos/Developing space capsule page 1.mov" type="video/mp4">
+                        </video> -->
+                        <p>Developing Space capsule page 1</p>
+                    </div>
+
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/6AeH2peXeQ8" allow="fullscreen">
+                        </iframe>
+                        <!-- <video controls>
+                            <source src="videos/Developing space capsule page 2.mov" type="video/mp4">
+                        </video> -->
+                        <p>Developing Space capsule page 2</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -313,7 +352,6 @@
             </div>
         </footer>
     </main>
-    <link rel="stylesheet" href="css/app.min.css">
     <link rel="stylesheet" href="css/normalize.css">
 </body>
 
